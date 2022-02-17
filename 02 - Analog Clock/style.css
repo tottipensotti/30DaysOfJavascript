@@ -1,56 +1,56 @@
-        html {
-            background: url(https://picsum.photos/id/1036/1000/1500?blur=1);
-            background-size: cover;
-            font-family: 'helvetica neue';
-            text-align: center;
-            font-size: 10px;
-        }
+html {
+    background: url(https://picsum.photos/id/1036/1000/1500?blur=1);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
 
-        body {
-            margin: 0;
-            font-size: 2rem;
-            display: flex;
-            flex: 1;
-            min-height: 100vh;
-            align-items: center;
-        }
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
 
-        .clock{
-            width: 100rem;
-            height:100rem;
-            border-radius: 50%;
-            background-color: rgba(245, 240, 240, 0.411);
-            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 1px rgba(0, 0, 0, 0.2);
-            position: relative;
-            margin: 50rem auto;
-        }
+.clock{
+    width: 100rem;
+    height:100rem;
+    border-radius: 50%;
+    background-color: rgba(245, 240, 240, 0.411);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 50rem auto;
+}
 
-        #seconds, #minutes, #hours {
-            position: absolute;
-            border-radius: 10px;
-            transform-origin: bottom;
-        }
+#seconds, #minutes, #hours {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
 
-        #seconds{
-            width: 2%;
-            height: 40%;
-            top: 10%;
-            left: 50%;
-            background: red;
-        }
+#seconds{
+    width: 2%;
+    height: 40%;
+    top: 10%;
+    left: 50%;
+    background: red;
+}
 
-        #minutes {
-            width: 2%;
-            height: 30%;
-            top: 20%;
-            left: 50%;
-            background: grey;
-        }
+#minutes {
+    width: 2%;
+    height: 30%;
+    top: 20%;
+    left: 50%;
+    background: grey;
+}
 
-        #hours {
-            width: 2%;
-            height: 20%;
-            top: 30%;
-            left: 50%;
-            background: black;
-        }
+#hours {
+    width: 2%;
+    height: 20%;
+    top: 30%;
+    left: 50%;
+    background: black;
+}
