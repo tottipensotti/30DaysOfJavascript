@@ -2,7 +2,6 @@ const secondsHand = document.querySelector('#seconds')
 const minutesHand = document.querySelector('#minutes');
 const hoursHand = document.querySelector('#hours');
 
-
 function setDate(){
     const now = new Date();
     const seconds = now.getSeconds();
