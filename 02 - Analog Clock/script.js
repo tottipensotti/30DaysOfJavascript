@@ -1,21 +1,22 @@
-const secHand = document.querySelector('.sec-hand');
-const minHand = document.querySelector('.min-hand');
-const hsHand = document.querySelector('.hs-hand');
+const secondsHand = document.querySelector('#seconds')
+const minutesHand = document.querySelector('#minutes');
+const hoursHand = document.querySelector('#hours');
 
 
 function setDate(){
     const now = new Date();
     const seconds = now.getSeconds();
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
-    secHand.style.transform = `rotate(${secondsDegrees}deg)`;
-    
+    const secondsDegrees = seconds * 6;
+
     const minutes = now.getMinutes();
-    const minutesDegrees = ((minutes / 60) * 360) + ((seconds/60)*6) + 90;
-    minHand.style.transform = `rotate(${minutesDegrees}deg)`;
+    const minutesDegrees = minutes * 6;
 
     const hours = now.getHours();
-    const hoursDegrees = ((hours / 12) * 360) + ((minutes/60)*30) + 90;
-    hsHand.style.transform = `rotate(${hoursDegrees}deg)`;
+    const hoursDegrees = (hours / 12) * 360;
+
+    secondsHand.style.transform = `rotate(${secondsDegrees}deg)`; 
+    minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+    hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 
 setInterval(setDate, 1000);
