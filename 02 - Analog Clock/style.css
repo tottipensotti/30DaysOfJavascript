@@ -33,55 +33,29 @@ body {
     transform: translateY(-3px);
 }
 
-.round{
+.hand {
+    width: 50rem;
+    height: 5px;
+    background: black;
     position: absolute;
-    top: 46rem;
-    left: 47rem;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 8rem;
-    height:8rem;
-    z-index: 1;
-}
-.sec-hand{
-    position: absolute;
-    border: 5px solid red;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    background-color: red;
-    left: 50%;
-    bottom: 50%;
-    width: 0;
-    height: 45%;
-    transform-origin: 50% 100%;
+    top: 50%;
+    transform-origin: 100%;
     transform: rotate(90deg);
+    border-radius: 50% 0 0 50%;
+}
+
+.sec-hand{
+    background: red;
+    border: 1px solid red;
 }
 
 .min-hand{
-    position: absolute;
-    border: 8px solid rgb(54, 53, 53);
-    background-color: rgb(54, 53, 53);
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    left: 50%;
-    bottom: 50%;
-    width: 0;
-    height: 35%;
-    transform-origin: 50% 100%;
-    transform: rotate(90deg);
+    width: transform(scale(0.8));
+    background: grey;
+    border: 2px solid grey;
 }
 
 .hs-hand{
-    position: absolute;
-    border: 10px solid black;
-    background-color: black;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    left: 50%;
-    bottom: 50%;
-    width: 0;
-    height: 25%;
-    transform-origin: 50% 100%;
-    transform: rotate(90deg);
+    background: black;
+    border: 4px solid black;
 }
